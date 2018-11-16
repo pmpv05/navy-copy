@@ -1,0 +1,38 @@
+{
+    "name": "navy-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "jest",
+        "start": "node index.js",
+        "dev": "nodemon"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ucudal-wp/navy-final"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ucudal-wp/navy-final/issues"
+    },
+    "homepage": "https://github.com/ucudal-wp/navy-final#readme",
+    "devDependencies": {
+        "@ucudal/eslint-config": "^0.1.0",
+        "eslint": "^5.3.0",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-plugin-import": "^2.13.0",
+        "eslint-plugin-prettier": "^2.6.2",
+        "jest": "^23.5.0",
+        "nodemon": "^1.18.5",
+        "prettier": "^1.14.2"
+    },
+    "dependencies": {
+        "express": "^4.16.3",
+        "express-nunjucks": "^2.2.3",
+        "nunjucks": "^3.1.3"
+    }
+}

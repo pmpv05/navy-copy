@@ -1,0 +1,68 @@
+img {
+    width: 7em;
+    height: 7em;
+}
+
+ul li {
+    list-style: none;
+}
+
+li {
+    padding-bottom: 0;
+}
+
+.listGames {
+    margin: 0 0 0.1em;
+}
+
+.games {
+    border: 0.1em solid navy;
+    margin: 0 0.5em 1em;
+    display: inline-block;
+}
+
+.listConsoles {
+    margin: 0 0 0.1em;
+}
+
+.consoles {
+    border: 0.1em solid navy;
+    margin: 0 0.5em 1em;
+    display: inline-block;
+}
+
+.listAccessories {
+    margin: 0 0 0.1em;
+}
+
+.accessories {
+    border: 0.1em solid navy;
+    margin: 0 0.5em 1em;
+    display: inline-block;
+}
+
+.addBtn {
+    color: white;
+    font-size: 0.9em;
+    background-color: navy;
+    padding: 1%;
+    border: 1px double skyblue;
+}
+
+.cancelBtn {
+    color: white;
+    font-size: 0.9em;
+    background-color: firebrick;
+    padding: 1%;
+    border: 1px double orangered;
+}
+
+p {
+    line-height: 1em;
+    margin-bottom: 0em;
+}
+
+#content {
+    height: 100vh;
+    overflow: auto;
+}

@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block header %}
+<link rel="stylesheet" href="/static/styles/detailsGame.css" type="text/css" />
+<script src="/static/scripts/detailsConsole.js" type="module" defer></script>
+{% endblock %} {% block body %}
+<section id="content" class="column-right">
+
+  <div class="alertMsg">
+    <span id="closebtn" class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <strong>Error!</strong> <label id="errorMsg"></label><br>
+    <span id="refreshbtn" class="refreshbtn" onclick="location.href = `/consoles`;">&times;</span>
+  </div>
+
+  <div id="dataConsole">
+    <h2 id="nameConsole"></h2>
+    <input type="text" name="name" id="name" placeholder="Ingrese nombre de la consola" maxlength="100" disabled="disabled"
+      required>
+    <button class="editBtn" type="button" data-id="{{id}}">
+      <img class="editImg" src="/static/assets/edit.png" />
+    </button>
+
+    <div id="imageConsole"></div>
+
+    <div id="detailsConsole">
+      <label>Marca</label><input type="text" class="details" name="brand" id="brand" placeholder="Ingrese una marca"
+        maxlength="50" disabled="disabled" required>
+      <label>Año</label><input type="number" class="details" name="year" id="year" placeholder="Ej: 2001" disabled="disabled"
+        required>
+      <label>Descripción</label><textarea class="details" name="desc" id="desc" placeholder="Ingrese una descripción"
+        rows="5" cols="60" disabled="disabled" required></textarea>
+      <label>Precio</label><input type="number" class="details" name="price" id="price" placeholder="En USD" disabled="disabled"
+        required>
+      <label>Stock</label><input type="number" class="details" name="stock" id="stock" disabled="disabled" required>
+      <label>Imagen</label><input type="file" class="details" name="image" id="image" accept="image/png, image/jpeg"
+        disabled="disabled" required>
+    </div>
+    <button class="saveBtn" type="submit">Guardar</button>
+  </div>
+  <br>
+</section>
+<div>
+  <button class="cancelBtn" id="deleteBtn">Eliminar</button>
+</div>
+{% endblock %}

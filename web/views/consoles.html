@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block header %}
+<link rel="stylesheet" href="/static/styles/games.css" type="text/css" />
+<script src="/static/scripts/consoles.js" type="module"></script>
+{% endblock %} {% block body %}
+<section id="content" class="column-right">
+
+    <article>
+        <h2 class="tituleGames">Consolas</h2>
+        <button class="addBtn" onclick="location.href = '/addConsole';">+ Agregar Consola</button>
+        <br><br>
+        <div id="list"></div>
+    </article>
+
+</section>
+{% endblock %}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>NAVY-FINAL-WORK</title>
+    <link rel="stylesheet" href="/static/styles/index.css" type="text/css" />
+    <script src="/static/scripts/base.js" type="module"></script>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" /> {% block header %} {% endblock %}
+</head>
+
+<body>
+
+    <aside id="sidebar" class="column-left">
+
+        <header>
+            <h1><a href="#">navy</a></h1>
+
+            <h2>Bienvenido</h2>
+
+        </header>
+
+        <nav id="mainnav">
+            <ul>
+                <li class="{{ " selected-item " if selected === 'home'}}'"><a href="home">Inicio</a></li>
+                <li class="{{ " selected-item " if selected === 'games'}}'"><a href="games">Juegos</a></li>
+                <li class="{{ " selected-item " if selected === 'consoles'}}'"><a href="consoles">Consolas</a></li>
+                <li class="{{ " selected-item " if selected === 'accessories'}}'"><a href="accessories">Accesorios</a></li>
+                <li class="{{ " selected-item " if selected === 'contact'}}'"><a href="contact">Contacto</a></li>
+                <li id="adminProfile"><a href="#">ADMINISTRACION DE PERFILES</a></li>
+            </ul>
+        </nav>
+
+        <footer class="clear">
+            <p>&copy; 2018 navy. <a href="https://github.com/ucudal-wp/navy-final">Git Hub</a> by Group Navy</p>
+        </footer>
+
+
+    </aside>
+
+
+    {% block body %} {% endblock %}
+
+
+</body>
+
+</html>

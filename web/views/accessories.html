@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block header %}
+<link rel="stylesheet" href="/static/styles/games.css" type="text/css" />
+<script src="/static/scripts/accessories.js" type="module"></script>
+{% endblock %} {% block body %}
+<section id="content" class="column-right">
+
+    <article>
+        <h2 class="tituleGames">Accesorios</h2>
+        <button class="addBtn" onclick="location.href = '/addAccessory';">+ Agregar Accesorio</button>
+        <div id="list"></div>
+    </article>
+
+</section>
+{% endblock %}

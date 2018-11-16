@@ -1,0 +1,108 @@
+#dataGame {
+    display: block;
+}
+
+#nameGame {
+    display: inline;
+}
+
+#name {
+    display: none;
+}
+
+#imageGame {
+    width: 10em;
+    height: 10em;
+}
+
+.details {
+    width: 25em;
+    height: 2em;
+    display: block;
+}
+
+#desc {
+    height: 4em;
+}
+
+.editBtn {
+    border: 0em;
+    cursor: pointer;
+    cursor: hand
+}
+
+.editBtn:hover {
+    background-color: gray;
+    cursor: pointer;
+    cursor: hand
+}
+
+.editImg {
+    width: 3em;
+    height: 3em;
+}
+
+.saveBtn {
+    display: none;
+    background-color: navy;
+    border-radius: 0.5em;
+    color: white;
+    font-weight: bold;
+    padding: 0.8em 2.2em;
+    font-size: 0.6em;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    cursor: hand
+}
+
+.saveBtn:hover {
+    background-color: skyblue;
+    cursor: pointer;
+    cursor: hand
+}
+
+.cancelBtn {
+    display: none;
+    background-color: firebrick;
+    border-radius: 0.5em;
+    border: 1px double orangered;
+    color: white;
+    font-weight: bold;
+    padding: 0.8em 2.2em;
+    font-size: 0.6em;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    cursor: hand
+}
+
+.cancelBtn:hover {
+    background-color: red;
+    cursor: pointer;
+    cursor: hand
+}
+
+.alertMsg {
+    display: none;
+    padding: 20px;
+    background-color: red;
+    color: white;
+    height: 3em;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#refreshbtn,
+#closebtn {
+    cursor: pointer;
+}

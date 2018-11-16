@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block header %}
+<script src="/static/scripts/contact.js" type="module"></script>
+{% endblock %} {% block body %}
+
+<section id="content" class="column-right">
+  <article>
+    <h2>Contacto</h2>
+    <form id="emailForm">
+      <label class="control-label col-sm-2" for="subject">Asunto</label><br />
+      <input
+        type="text"
+        class="form-control"
+        id="subject"
+        placeholder="Ingrese un asunto"
+        required
+      /><br />
+      <br />
+      <textarea
+        id="mailBody"
+        rows="10"
+        cols="50"
+        required
+        placeholder="Escriba su consulta..."
+      ></textarea
+      ><br />
+      <button type="submit"><a class="button">Enviar</a></button>
+    </form>
+  </article>
+</section>
+{% endblock %}

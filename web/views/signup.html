@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>NAVY-FINAL-WORK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/styles/login.css" />
+    <script src="/static/scripts/signup.js" type="module"></script>
+</head>
+
+<body>
+    <h1>Navy Store</h1>
+    <form id="formSignup">
+        <div class="form-group">
+            <img src="http://info7rm.blob.core.windows.net.optimalcdn.com/images/2016/11/12/622070_pacman.jpg" />
+            <div class="email-group">
+                <label class="control-label col-sm-2">Nombre</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="email-group">
+                <label class="control-label col-sm-2">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo"
+                    required>
+            </div>
+            <div class="pass-group">
+                <label class="control-label col-sm-2">Contraseña</label>
+                <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Ingrese su contraseña"
+                    autocomplete="off" required>
+            </div>
+            <div class="btn-group">
+                <button class="loginBtn" type="submit">Registarme</button>
+            </div>
+        </div>
+    </form>
+    Si ya tienes una cuenta, <a href="/login">Ingresa</a>
+</body>
+
+</html>

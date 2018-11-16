@@ -1,0 +1,291 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+
+/** global **/
+
+body {
+    margin: 0em auto;
+    padding-left: 0;
+    font-family: "Source Sans Pro", "sans-serif";
+    font-size: 1.0em;
+    color: #666;
+    display: flex;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.conte {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/** element defaults **/
+
+p {
+    line-height: 2.0em;
+    margin-bottom: 2.0em;
+}
+
+a {
+    color: skyblue;
+}
+
+a:hover {
+    color: #000;
+}
+
+a:focus {
+    outline: none;
+}
+
+a.button {
+    background-color: navy;
+    border-radius: 0.5em;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.8em 2.2em;
+    font-size: 0.6em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.button-reversed {
+    background-color: #333;
+}
+
+a.button:hover,
+a.button-reversed:hover {
+    background-color: skyblue;
+}
+
+h1 {
+    font-size: 2.4em;
+}
+
+h2 {
+    color: #2f2f2f;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 0 0 0.5em;
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0 0 3.5em 3.5em;
+}
+
+li {
+    padding-bottom: 0.5em;
+}
+
+
+/** header **/
+
+header {
+    padding: 1em 1.5em 1em;
+    margin: 0 auto;
+}
+
+header h1 {
+    text-align: right;
+}
+
+header h1 a,
+header h1 a:hover,
+header h1 a:visited {
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+header h2 {
+    color: #C4DDB6;
+    text-align: right;
+    font-size: 0.8em;
+    font-weight: normal;
+    padding-bottom: 0;
+    letter-spacing: 0;
+}
+
+
+/** body **/
+
+section#body {
+    padding: 0;
+    background: navy;
+}
+
+
+/** content+sidebar styles **/
+
+section#content {
+    display: flex;
+    flex: 4;
+    height: 100vh;
+    padding-left: 2.0em;
+    background-color: white;
+}
+
+.column-left {
+    float: left;
+}
+
+aside#sidebar {
+    /* width: 19.5%;
+    min-height: 100vh; */
+    flex: 1;
+    background-color: navy;
+}
+
+nav#mainnav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav#mainnav li {
+    padding: 0;
+    border-bottom: 0.1em solid navy;
+    border-top: 0.1em solid skyblue;
+}
+
+nav#mainnav li.selected-item {
+    border-bottom: none;
+}
+
+nav#mainnav li.selected-item a,
+nav#mainnav li.selected-item a:hover {
+    color: navy;
+    font-weight: bold;
+    background: white;
+}
+
+nav#mainnav li a:hover {
+    background: skyblue;
+    color: white;
+    text-decoration: none;
+}
+
+nav#mainnav li a {
+    border-bottom: 0 solid white;
+    color: white;
+    display: block;
+    padding: 1em 1em;
+    text-align: right;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+article {
+    font-size: 1.2em;
+}
+
+
+/** footer **/
+
+footer {
+    bottom: 0;
+    padding: 1em 0em;
+    width: 19%;
+    position: fixed;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+footer p a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 0.1em solid #999;
+}
+
+footer p a:hover {
+    color: skyblue;
+    border-bottom-color: skyblue;
+}
+
+
+/** clear fix **/
+
+.clear:after {
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+    display: inline-block;
+}
+
+.clear {
+    display: block;
+}
+
+@media screen and (max-width: 740px) {
+    body {
+        font-size: 0.9em;
+    }
+    .width {
+        width: auto;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .column-left,
+    .column-right {
+        margin: 0px;
+    }
+    header h1,
+    header h2,
+    footer,
+    footer p,
+    footer p a,
+    footer p a:hover,
+    nav#mainnav li a {
+        text-align: center;
+    }
+    section#content,
+    aside#sidebar,
+    footer {
+        position: relative;
+        float: none;
+        width: auto;
+        margin-left: 0;
+        min-height: 0;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    body {
+        font-size: 0.8em;
+    }
+    header,
+    header h1 a,
+    header h1 a:hover,
+    footer,
+    footer p,
+    footer p a,
+    footer p a:hover {
+        text-align: center;
+        padding: 1em 0 0 0;
+        font-size: 1.1em;
+        width: 100%;
+    }
+    nav#mainnav ul li a {
+        margin-top: 0;
+        padding: 1em;
+    }
+}

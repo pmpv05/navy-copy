@@ -1,0 +1,74 @@
+{% extends "base.html" %} {% block header %}
+<link rel="stylesheet" href="/static/styles/games.css" type="text/css" />
+<script src="/static/scripts/addGame.js" type="module"></script>
+{% endblock %} {% block body %}
+<section id="content" class="column-right">
+  <article>
+    <h2 class="tituleGames">Nuevo Juego</h2>
+    <form id="formNewConsole">
+      <table>
+        <tr>
+          <td style="width:35%">Nombre:</td>
+          <td style="width:50%">
+            <input type="text" class="form-control" id="newName" placeholder="Ingrese un nombre" maxlength="50"
+              required />
+          </td>
+        </tr>
+        <br />
+        <tr>
+          <td style="width:35%">Marca:</td>
+          <td style="width:50%">
+            <input type="text" class="form-control" id="newBrand" placeholder="Ingrese una marca" maxlength="50"
+              required />
+          </td>
+        </tr>
+        <br />
+        <tr>
+          <td style="width:35%">Año:</td>
+          <td style="width:50%">
+            <input type="number" class="form-control" id="newYear" placeholder="Ej: 2001" required />
+          </td>
+        </tr>
+        <br />
+        <tr>
+          <td style="width:35%">Descripción:</td>
+          <td style="width:50%">
+            <textarea class="form-control" id="newDesc" placeholder="Ingrese una descripción" rows="5" cols="60"
+              required></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td style="width:35%">Precio:</td>
+          <td style="width:50%">
+            <input type="number" class="form-control" id="newPrice" placeholder="En USD" required />
+          </td>
+        </tr>
+        <tr>
+          <td style="width:35%">Consola y Stock:</td>
+          <td>
+            <div id="container">
+              <input type="text" class="form-control" id="stockName0" placeholder="Consola" required />
+
+              <input type="number" class="form-control" id="stockAmount0" placeholder="Cantidad" required />
+              <button id="addStock">+ Otra consola</button>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="width:25%">Imagen:</td>
+          <td style="width:60%">
+            <input type="file" class="form-control" id="newImg" placeholder="Agregar imagen" accept="image/png, image/jpeg"
+              required />
+          </td>
+        </tr>
+      </table>
+
+      <br />
+      <button class="addBtn" type="submit">Agregar</button>&nbsp;&nbsp;<button class="cancelBtn" type="reset">
+        Resetear
+      </button>
+    </form>
+  </article>
+</section>
+{% endblock %}

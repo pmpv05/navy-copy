@@ -1,0 +1,107 @@
+{% extends "base.html" %} {% block header %}
+<link rel="stylesheet" href="/static/styles/games.css" type="text/css" />
+<script src="/static/scripts/addConsole.js" type="module"></script>
+{% endblock %} {% block body %}
+<section id="content" class="column-right">
+  <article>
+    <h2 class="tituleGames">Nueva Consola</h2>
+    <form id="formNewConsole">
+      <table>
+        <tr>
+          <td style="width:25%">Nombre:</td>
+          <td style="width:60%">
+            <input
+              type="text"
+              class="form-control"
+              id="newName"
+              placeholder="Ingrese un nombre"
+              maxlength="50"
+              required
+            />
+          </td>
+        </tr>
+        <br />
+        <tr>
+          <td style="width:25%">Marca:</td>
+          <td style="width:60%">
+            <input
+              type="text"
+              class="form-control"
+              id="newBrand"
+              placeholder="Ingrese una marca"
+              maxlength="50"
+              required
+            />
+          </td>
+        </tr>
+        <br />
+        <tr>
+          <td style="width:25%">Año:</td>
+          <td style="width:60%">
+            <input
+              type="number"
+              class="form-control"
+              id="newYear"
+              placeholder="Ej: 2001"
+              required
+            />
+          </td>
+        </tr>
+        <br />
+        <tr>
+          <td style="width:25%">Descripción:</td>
+          <td style="width:60%">
+            <textarea
+              class="form-control"
+              id="newDesc"
+              placeholder="Ingrese una descripción"
+              rows="5"
+              cols="60"
+              required
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td style="width:25%">Precio:</td>
+          <td style="width:60%">
+            <input
+              type="number"
+              class="form-control"
+              id="newPrice"
+              placeholder="En USD"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td style="width:25%">Stock:</td>
+          <td style="width:60%">
+            <input type="number" class="form-control" id="newStock" required />
+          </td>
+        </tr>
+        <tr>
+          <td style="width:25%">Imagen:</td>
+          <td style="width:60%">
+            <input
+              type="file"
+              class="form-control"
+              id="newImg"
+              placeholder="Agregar imagen"
+              accept="image/png, image/jpeg"
+              required
+            />
+          </td>
+        </tr>
+      </table>
+
+      <br />
+      <button class="addBtn" type="submit">Agregar</button>&nbsp;&nbsp;<button
+        class="cancelBtn"
+        type="reset"
+      >
+        Resetear
+      </button>
+    </form>
+  </article>
+</section>
+{% endblock %}
